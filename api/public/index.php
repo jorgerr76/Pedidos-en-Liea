@@ -37,16 +37,10 @@ include_once "globales.php";
 
 /************* API *************/
 
-//include_once 'controllers/celular-marca.php';
-//include_once 'controllers/departamento.php';
-//include_once 'controllers/denuncia.php';
-//include_once 'controllers/documento-tipo.php';
-//include_once 'controllers/localidad.php';
-//include_once 'controllers/ocupacion.php';
-//include_once 'controllers/pais.php';
-//include_once 'controllers/vehiculo-color.php';
-//include_once 'controllers/vehiculo-marca.php';
-//include_once 'controllers/vehiculo-modelo.php';
+include_once 'controllers/cliente.php';
+include_once 'controllers/producto.php';
+include_once 'controllers/pedido.php';
+include_once 'controllers/detalle-pedido.php';
 
 
 $app->get('/', function (Request $request, Response $response, $args) {
