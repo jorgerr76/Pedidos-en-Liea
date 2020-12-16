@@ -46,7 +46,7 @@ export class DetallePedidoComponent implements OnInit {
       detaCantidad: ['', Validators.required],
       detaPrecio: ['', Validators.required],
       detaBorrado: [''],
-      pediFechaAlta: [''],
+      detaFechaAlta: [''],
       prodDescripcion:[''],
       prodPrecio:['']
     });
@@ -73,6 +73,7 @@ export class DetallePedidoComponent implements OnInit {
       this.productos = x;
     });
   }
+  
 
   agregar(){
     this.formDetalle.reset();
