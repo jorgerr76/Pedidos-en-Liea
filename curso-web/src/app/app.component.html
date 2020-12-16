@@ -1,1 +1,15 @@
+<div class="header">
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>reorder</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/clientes">Clientes</button>
+    <button mat-menu-item routerLink="/productos">Productos</button>
+    <button mat-menu-item routerLink="/pedidos">Pedidos</button>
+  </mat-menu>
+  <div class="spacer"></div>
+  <h2>Sistema de Pedidos</h2>
+  <div class="spacer"></div>
+</div>
+
 <router-outlet></router-outlet>

@@ -1,23 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ClientesComponent } from './components/clientes/clientes.component';
-import { HomeComponent } from './components/home/home.component';
-import { PedidosComponent } from './components/pedidos/pedidos.component';
-import { ProductosComponent } from './components/productos/productos.component';
+import { ClienteComponent } from './components/cliente/cliente.component';
+import { DetallePedidoComponent } from './components/detalle-pedido/detalle-pedido.component';
+import { PedidoComponent } from './components/pedido/pedido.component';
+import { ProductoComponent } from './components/producto/producto.component';
 
 const routes: Routes = [
-    { path: 'home', component: HomeComponent },
-    { path: 'clientes', component: ClientesComponent },
-    { path: 'productos', component: ProductosComponent },
-    { path: 'pedidos', component: PedidosComponent },
-    { path: '**', component: HomeComponent },
+  { path: 'clientes', component: ClienteComponent },
+  { path: 'productos', component: ProductoComponent },
+  { path: 'pedidos', component: PedidoComponent },
+  { path: 'detalle-pedido', component: DetallePedidoComponent },
+  { path: '**', component: ClienteComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{
-    scrollPositionRestoration: 'enabled',
-    useHash: true
-  })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

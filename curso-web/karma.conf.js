@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/curso-web'),
+      dir: require('path').join(__dirname, './coverage/curso-soflex'),
       subdir: '.',
       reporters: [
         { type: 'html' },
